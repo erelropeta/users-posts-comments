@@ -1,8 +1,34 @@
-# React + Vite
+# Users-Posts-Comments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React beginner challenge from Dave Gray's React Course on Youtube
 
-Currently, two official plugins are available:
+Displays data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)'s users, posts, and comments source url as a list in JSON format.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the data from JSONSPlaceholder's users, posts, and comments API by clicking on their corresponding button
+- See active and hover states of the tabs
+
+### Screenshot
+
+### Links
+
+- Solution URL: [https://github.com/erelropeta/users-posts-comments](https://github.com/erelropeta/users-posts-comments)
+- Live Site URL: [https://users-posts-comments-er.netlify.app/](https://users-posts-comments-er.netlify.app/)
+
+## My Process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://react.dev/) - JS library
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing and prototyping

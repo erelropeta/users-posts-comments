@@ -31,5 +31,5 @@
   width: 90vw;
   min-width: 330px;
   max-width: 1170px;
-  margin: auto;
+  margin-inline: auto;
 }

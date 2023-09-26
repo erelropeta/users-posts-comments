@@ -1,0 +1,17 @@
+.content {
+  background-color: var(--clr-surface);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  overflow-wrap: break-word;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content__item {
+  list-style: circle;
+  margin-left: 1rem;
+}

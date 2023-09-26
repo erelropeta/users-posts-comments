@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Tabs from './Tabs';
+import { Content } from './Content';
 
 function App() {
   const [tabLinks, setTabLinks] = useState([
@@ -28,6 +29,7 @@ function App() {
   const [contentURL, setContentURL] = useState(
     'https://jsonplaceholder.typicode.com/users'
   );
+  const [content, setContent] = useState('');
 
   function handleActiveTab(id) {
     const activeTab = tabLinks.find((item) => item.id === id);
@@ -40,9 +42,30 @@ function App() {
     setContentURL(activeTab.url);
   }
 
+  useEffect(() => {
+    const fetchContent = async () => {
+      try {
+        const response = await fetch(contentURL);
+
+        if (!response.ok) {
+          throw new Error(`HTTP error: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        setContent(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchContent();
+  }, [contentURL]);
+
   return (
     <main className="main">
       <Tabs tabLinks={tabLinks} handleActiveTab={handleActiveTab} />
+      {content ? <Content content={content} /> : ''}
     </main>
   );
 }

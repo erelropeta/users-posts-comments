@@ -6,6 +6,7 @@
 
 :root {
   --clr-base: hsl(249deg, 22%, 12%);
+  --clr-surface: hsl(247deg, 23%, 15%);
   --clr-overlay: hsl(248deg, 25%, 18%);
   --clr-btn-bg: hsl(248deg, 25%, 18%);
   --clr-btn-bg-hover: hsla(248deg, 25%, 18%, 0.5);
@@ -24,4 +25,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.main {
+  width: 90vw;
+  min-width: 330px;
+  max-width: 1170px;
+  margin: auto;
 }
